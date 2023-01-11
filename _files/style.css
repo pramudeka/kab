@@ -1,0 +1,133 @@
+/*
+Theme Name: Themes 2021
+Theme URI: https://www.blitarkab.go.id
+Author: Tim Informatika (Dinas Komunikasi dan Informatika) - Kabupaten Blitar
+Author URI: https://www.blitarkab.go.id
+Description: Team Developer (Dinas Komunikasi dan Informatika Kabupaten Blitar)
+Version: 1.0.0
+License: GNU V3
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, accessibility-ready
+Text Domain: Upgrase Skill Kamu di Sini
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+@import url('berlin-sans-fb-demi-bold.ttf');
+*/
+.bg-tosca {
+    font-family: "Berlin Sans FB Demi" !important;
+    background-color: #e4f9f5 !important;
+    color: #40514e !important;
+    border: none;
+}
+
+.banner {
+    height: 250px;
+}
+.single img {
+    max-width: 100%;
+    height: auto;
+}
+
+#Iframe-Liason-Sheet {
+ max-width: 550px;
+ max-height: 600px;
+ overflow: hidden;
+}
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+ position: relative;
+ height: 0;  /* gets height from padding-bottom setting */
+ -webkit-overflow-scrolling: touch;
+ overflow: auto;
+}
+.responsive-wrapper iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ border: none;
+}
+/* padding-bottom = h/w as a % */
+.responsive-wrapper-wxh-550x2000 {
+ padding-bottom: 363.6364%;
+}
+.iframe-border {
+ border: none !important;
+}
+.center-block-horiz {
+ margin-left: auto !important;
+ margin-right: auto !important;
+}
+.alignleft {
+    float: left; }
+
+.alignright {
+    float: right; }
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+img.alignleft {
+    margin: 5px 20px 5px 0; }
+
+.wp-caption.alignleft {
+    margin: 5px 10px 5px 0; }
+
+img.alignright {
+    margin: 5px 0 5px 20px; }
+
+.wp-caption.alignright {
+    margin: 5px 0 5px 10px; }
+
+img.aligncenter {
+    margin: 5px auto; }
+
+img.alignnone {
+    margin: 5px 0; }
+
+.wp-caption .wp-caption-text,
+.entry-caption, .gallery-caption {
+    color: #333333;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300; }
+
+img.wp-smiley,
+.rsswidget img {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0; }
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol {
+    list-style-position: inside; }
+
+/* WordPress Responsive Styles
+------------------------------------------------------------ */
+/* All images are responsive by default */
+img {
+    height: auto;
+    max-width: 100%; }
+
+/* Make sure videos, embeds, and captions fit their containers. */
+.wp-caption,
+embed,
+iframe,
+object,
+video {
+    max-width: 100%; }
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size:14px;
+    }
+}
