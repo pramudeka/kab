@@ -1671,7 +1671,7 @@ section {
 }
 
 .berita .berita-content .berita-title{
-  border-bottom: 5px double #009cea;
+  border-top: 5px double #009cea;
 }
 .berita .nav-tabs {
   border: 0;
@@ -1793,13 +1793,14 @@ section {
 
 .others .others-logo {
   display: flex;
-  height: 120px;
+  /* height: 120px; */
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background: #fff;
-  padding: 40px;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .others .others-logo img {
@@ -1811,7 +1812,7 @@ section {
   filter: none;
   background: rgb(73, 73, 73);
   color: #fff;
-  padding: 35px 40px 45px 40px;
+  padding: 15px 20px 25px 20px;
   transition: all .2s ease;
 }
 
@@ -1823,7 +1824,7 @@ section {
 # Pungli
 --------------------------------------------------------------*/
 .pungli{
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../_files/pemkab1.JPG') center center no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../files/pemkab1.JPG') center center no-repeat fixed;
 }
 .pungli-carousel,
 .pungli-slider {
@@ -1912,7 +1913,7 @@ th{
 }
 
 .main-video{
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../_files/pemkab2.JPG') center center no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../files/pemkab2.JPG') center center no-repeat fixed;
   background-size: cover;
 }
 
@@ -1932,4 +1933,9 @@ th{
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 0;
+	width: 100%;
 }
