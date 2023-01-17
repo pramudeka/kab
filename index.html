@@ -23,6 +23,9 @@
     <link rel="icon" href="https://www.blitarkab.go.id/images/icon.png">
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -46,9 +49,8 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <div class=""><img src="files/header_pemkab.jpg" class="img-fluid d-flex mx-auto" alt=""></div>
   <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="container-xl d-flex align-items-center justify-content-between">
       <nav id="navbar" class="navbar order-lg-0">
         <ul>
           <li><a class="nav-link active" href="#hero">Beranda</a></li>
@@ -94,216 +96,293 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </div>
       </nav><!-- .navbar -->
-      <div class="col-sm-3 float-end">
+      <div class="col-md-3 float-end">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Kata Kunci" aria-label="Kata Kunci" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cari</button>
+            <button class="btn btn-outline-success" type="button" id="button-addon2">Cari</button>
         </div>
       </div>
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="m-0">
+  <section id="hero" class="m-0 mt-2 p-0 px-lg-4">
 
-    <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-      
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="files/wtp.webp" class="d-block w-100" data-bs-interval="2000">
-          </div>
-          <div class="carousel-item">
-            <img src="files/sampul-3.webp" class="d-block w-100" data-bs-interval="2000">
-          </div>
-          <div class="carousel-item">
-            <img src="files/sampul-wab-2.webp" class="d-block w-100" data-bs-interval="2000">
-          </div>
-          <div class="carousel-item">
-            <img src="files/Salinan-dari-Desa-senen-1.webp" class="d-block w-100" data-bs-interval="2000">
-          </div>
-          <div class="carousel-item active">
-            <img src="files/top-slide.webp" class="d-block w-100" data-bs-interval="2000">
-          </div>
-          <div class="carousel-item">
-            <img src="files/sl3.webp" class="d-block w-100" data-bs-interval="2000">
-          </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <div class="container-xl">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" hidden>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background: url('files/Salinan-dari-Desa-senen-1.webp') top center no-repeat; background-size: cover;" data-bs-interval="3000">
+                
+              </div>
+              <div class="carousel-item" style="background: url('files/sampul-wab-2.webp') top center no-repeat; background-size: cover;" data-bs-interval="3000">
+                
+              </div>
+              <div class="carousel-item" style="background: url('files/sampul-3.webp') top center no-repeat; background-size: cover;" data-bs-interval="3000">
+                <!-- <img src="files/sampul-3.webp" class="d-block w-100" data-bs-interval="2000"> -->
+              </div>
+              
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+    
+            </div>
 
-      </div>
+              <div class="hero-title d-flex align-items-center">
+                <div class="hero-text w-100">
+                  <div class="container">
+                    <h1>Kabupaten Blitar</h1>
+                    <p> Mandiri dan sejahtera berlandaskan akhlak mulia.</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
     </div>
 
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Visi & Misi</h3>
-            <p> Terwujudnya Kabupaten Blitar yang mandiri dan sejahtera berlandaskan akhlak mulia.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Selengkapnya</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
     <!-- ======= Layanan Section ======= -->
     <section id="layanan" class="layanan">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div id="layanancarousels" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators invisible">
-                <button type="button" data-bs-target="#layanancarousels" class="active" aria-current="true" data-bs-slide-to="0" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#layanancarousels" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <div class="layanan-content">
+          <div class="layanan-title"><h2 class="mx-auto">Layanan Kami</h2></div>
+          <div class="layanan-item">
+            <div class="w-100 position-relative">
+              <div class="layanan-slider swiper">
+                <div class="swiper-wrapper">
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN1.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>Mall Pelayanan Publik</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN2.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>Tanggap Corona</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN3.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>PPID</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN4.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>LPSE</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN5.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>I-MOBIL</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN6.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>CALL CENTER 112</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN7.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>E-SIAP</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN8.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>SMART CITY</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                  <div class="swiper-slide">
+                    <div class="layanan-slider-item">
+                      <a href=""><img src="files/IKONLAYANAN9.png" class="layanan-slider-img" alt=""></a>
+                      <div class="layanan-slider-content">
+                        <h5>ONE DATA</h5>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+    
+                </div>
+                
               </div>
-            
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="files/sla1.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla2.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla3.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla4.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla5.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla6.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla7.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla8.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-                <div class="carousel-item">
-                  <img src="files/sla9.webp" class="d-block w-100" data-bs-interval="1500">
-                </div>
-              </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#layanancarousels" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#layanancarousels" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-      
+              
+              <div class="layanan-nav layanan-prev"><i class=" bi bi-arrow-caret-left-fill"></i></div>
+              <div class="layanan-nav layanan-next"><i class=" bi bi-arrow-caret-right-fill"></i></div>
+
             </div>
           </div>
-
         </div>
       </div>
     </section><!-- End Layanan Section -->
 
-    <!-- ======= Donor Section ======= -->
-    <section id="about" class="about py-5 m-0">
+    <!-- ======= Berita Section ======= -->
+    <section id="features" class="berita">
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0">
-              <h3>Stok Darah PMI</h3>
-              <p class="fst-italic">
-                Update : 2022-12-29 09:12:51
-              </p>
-              <table class="table table-bordered table-light">
-                <thead>
-                  <tr>
-                    <th>Jenis Darah</th>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>O</th>
-                    <th>AB</th>
-                    <th>Jumlah</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="text-center">
-                    <td class="text-success">WB</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>32</td>
-                    <td>43</td>
-                    <td>94</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td class="text-success">PRC</td>
-                    <td>38</td>
-                    <td>67</td>
-                    <td>8</td>
-                    <td>86</td>
-                    <td>199</td>
-                  </tr>
-                  <tr class="text-center">
-                    <td class="text-success">TC</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>7</td>
-                    <td>14</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="https://www.blitarkab.go.id/persediaan-darah/" class="float-start">Keterangan Jenis Darah</a>
+        <div class="berita-content">
+          <div class="berita-news">
+            <h2 class="mx-0 mx-lg-2">Berita Terkini</h2>
+            <div class="berita-news-body mx-0 mx-lg-2">
+              <div class="berita-preview">
+                <div class="berita-preview-img">
+                  <img src="https://www.blitarkab.go.id/wp-content/uploads/2023/01/f07db5dc-8ac2-486a-9746-ee1210677519.jpg" class="img-fluid mb-2" alt="">
+                </div>
+                <div class="berita-preview-content">
+                  <h5>Mak Rini Serahkan 1.117 Sertipikat Tanah kepada Warga Desa Pikatan Kecamatan Wonodadi</h5>
+                  <p>BLITAR KAB – Bupati Blitar Hj. Rini Syarifah didampingi Kepala Badan Pertanahan Nasional Kabupaten Blitar membagikan sertipikat tanah program strategis nasional pendaftaran tanah sistematis...</p>
+                  <a href="https://berita-slider.blitarkab.go.id/selamat-hari-natal-2022-dan-tahun-baru-2023/" class="btn btn-flat btn-block btn-primary btn-sm">Baca Selengkapnya</a>
+                </div>
+              </div>
+              <div class="w-100 position-relative">
+                <div class="berita-slider swiper">
+                  <div class="swiper-wrapper">
+      
+                    <div class="swiper-slide">
+                      <div class="berita-slider-item">
+                        <div style="background: url('https://www.blitarkab.go.id/wp-content/uploads/2023/01/f07db5dc-8ac2-486a-9746-ee1210677519.jpg') center center no-repeat; background-size: cover;" class="berita-slider-img" alt=""></div>
+                        <div class="berita-slider-content">
+                          <a href="https://berita-slider.blitarkab.go.id/selamat-hari-natal-2022-dan-tahun-baru-2023/" class="">Mak Rini Serahkan 1.117 Sertipikat Tanah kepada Warga Desa Pikatan Kecamatan Wonodadi</a>
+                        </div>
+                      </div>
+                    </div><!-- End testimonial item -->
+      
+                    <div class="swiper-slide">
+                      <div class="berita-slider-item">
+                        <div style="background: url('https://www.blitarkab.go.id/wp-content/uploads/2023/01/343A2742-scaled.jpg') center center no-repeat; background-size: cover;" class="berita-slider-img" alt=""></div>
+                        <div class="berita-slider-content">
+                          <a href="https://berita-slider.blitarkab.go.id/rapat-koordinasi-akhir-tahun-2022/" class="">Mak Rini Lantik Dewan Pengawas Perusahaan Daerah Savitri Indah dan PDAM Kabupaten Blitar</a>
+                        </div>
+                      </div>
+                    </div><!-- End testimonial item -->
+      
+                    <div class="swiper-slide">
+                      <div class="berita-slider-item">
+                        <div style="background: url('https://www.blitarkab.go.id/wp-content/uploads/2023/01/9b771fe2-5740-45f3-8e35-fd1537d6eaad.jpg') center center no-repeat; background-size: cover;" class="berita-slider-img" alt=""></div>
+                        <div class="berita-slider-content">
+                          <a href="https://berita-slider.blitarkab.go.id/pilkades-serentak-di-23-desa-di-17-kecamatan/" class="">Bupati Blitar Serahkan Reward kepada 31 Atlet dan Pelatih Kabupaten Blitar pada Ajang POPDA PEPARPEDA dan POSPEDA</a>
+                        </div>
+                      </div>
+                    </div><!-- End testimonial item -->
+      
+                  </div>
+                  <div class="berita-pagination text-center mt-2"></div>
+                </div>
+                
+              </div>
             </div>
           </div>
-          
-          <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 ">
-              <h3>Pengumuman</h3>
-
+          <div class="berita-announce position-relative">
+            <div class="w-100"><h2 class="">Pengumuman</h2></div>
+            <div class="w-100 py-3">
               <ul class="list-pengumuman">
-                <li class=""><i class="bx bx-info-circle"></i><a href="">Hasil Akhir Dewan Pengawas Dan Direksi PDAM Kabupaten Blitar</a></li>
-                <li class=""><i class="bx bx-info-circle"></i><a href="">Hasil Seleksi Uji Ke;ayakan dan Kepatutan Dewan Pengawas Dan Direksi PDAM Kabupaten Blitar</a></li>
-                <li class=""><i class="bx bx-info-circle"></i><a href="">Hasil Seleksi Administrasi Dewan Pengawas dan Direksi PDAM Kabupaten Blitar</a></li>
-                <li class=""><i class="bx bx-info-circle"></i><a href="">Hasil Seleksi Final Dewan Pengawas Perusahaan Daerah Savitri Indah Kabupaten Blitar</a></li>
-                <li class=""><i class="bx bx-info-circle"></i><a href="">Hasil Seleksi Uji Kelayakan Dan Kepatutan Dewan Pengawas Dan Direksi Perusahaan Daerah Savitri Indah Kabupaten Blitar</a></li>
+                <li class=""><a href="">Hasil Akhir Dewan Pengawas Dan Direksi PDAM Kabupaten Blitar</a></li>
+                <li class=""><a href="">Hasil Seleksi Uji Kelayakan dan Kepatutan Dewan Pengawas Dan Direksi PDAM Kabupaten Blitar</a></li>
+                <li class=""><a href="">Hasil Seleksi Administrasi Dewan Pengawas dan Direksi PDAM Kabupaten Blitar</a></li>
+                <li class=""><a href="">Hasil Seleksi Final Dewan Pengawas Perusahaan Daerah Savitri Indah Kabupaten Blitar</a></li>
+                <li class=""><a href="">Hasil Seleksi Uji Kelayakan Dan Kepatutan Dewan Pengawas Dan Direksi Perusahaan Daerah Savitri Indah Kabupaten Blitar</a></li>
               </ul>
             </div>
+
+            <div class="w-100 ">
+              <button class="btn btn-danger bottom-0 mb-3 donor-show" data-bs-toggle="collapse" data-bs-target="#donordarah" aria-expanded="false" aria-controls="donordarah">Stok Darah PMI</button>
+
+              <div id="donordarah" class="donor-content collapse">
+                <button type="button" class="btn-close float-end" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#donordarah" aria-expanded="false" aria-controls="donordarah"></button>
+                <p class="fst-italic text-black">
+                  Update : 2022-12-29 09:12:51
+                </p>
+                <div class="table-responsive">
+                  <table class="table table-bordered table-light">
+                    <thead>
+                      <tr>
+                        <th>Jenis Darah</th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>O</th>
+                        <th>AB</th>
+                        <th>Jumlah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-center">
+                        <td class="text-success">WB</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>32</td>
+                        <td>43</td>
+                        <td>94</td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-success">PRC</td>
+                        <td>38</td>
+                        <td>67</td>
+                        <td>8</td>
+                        <td>86</td>
+                        <td>199</td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-success">TC</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>7</td>
+                        <td>14</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="https://www.blitarkab.go.id/persediaan-darah/" class="">Keterangan Jenis Darah</a>
+                </div>
+              </div>
+            </div>
+            
           </div>
-          
         </div>
 
       </div>
-    </section><!-- End Donor Section -->
+    </section><!-- End Berita Section -->
 
     <section id="video" class="main-video">
       <div class="container">
@@ -314,236 +393,132 @@
         </div>
       </div>
     </section>
-    <!-- ======= Berita Section ======= -->
-    <section id="features" class="berita">
-      <div class="container">
-
-        <div class="berita-content">
-          <div class="col-sm-6 mb-tg-0 ">
-            <div class="berita-title w-100 p-3 text-center bg-white mb-2"><h3>Berita</h3></div>
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link">
-                  <div class="row">
-                  <div class="col-md-4 img"><img src="https://www.blitarkab.go.id/wp-content/uploads/2023/01/20230104101842_343A2660.jpg" class="img-fluid" alt=""></div>
-                  <div class="col-md-8">
-                    <h4>Dukung Pertumbuhan Perekonomian di Tingkat Desa Pemkab Blitar Gencar Sambang Desa</h4>
-                    <p>Pemkab Blitar – Kabupaten Blitar memiliki banyak potensi seperti halnya produk UMKM ataupun destinasi wisata. Desa Pasiraman dan Desa Kaligrenjeng Kecamatan Wonotirto memiliki potensi...</p>
-                  </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
-                <a class="nav-link">
-                  <div class="row">
-                  <div class="col-md-4 img"><img src="https://www.blitarkab.go.id/wp-content/uploads/2023/01/IMG-20230102-WA0020.jpg" class="img-fluid" alt=""></div>
-                  <div class="col-md-8">
-                    <h4>Hari Pertama Masuk Kerja di 2023, Bupati Blitar Mutasi Ratusan Pejabat</h4>
-                    <p>BLITAR KAB – Di awal tahun 2023, sejumlah 640 orang pejabat di Lingkungan Pemerintah Kabupaten Blitar dilantik dan diambil sumpah oleh Bupati Blitar Hj....</p>
-                  </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="200">
-                <a class="nav-link">
-                  <div class="row">
-                  <div class="col-md-4 img"><img src="https://www.blitarkab.go.id/wp-content/uploads/2022/12/e941711f-3bb0-4ca3-add0-155dc6317af6.jpg" class="img-fluid" alt=""></div>
-                  <div class="col-md-8">
-                    <h4>Mak Rini Hadiri Press Release Akhir Tahun 2022 dan Pemusnahan Barang Bukti di Mapolres Blitar</h4>
-                    <p>BLITAR KAB – Bupati Blitar Hj. Rini Syarifah menghadiri Press Release Akhir Tahun 2022 dan Pemusnahan Barang Bukti di Mapolres Blitar pada hari Jum’at...</p>
-                  </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="col-sm-6">
-            <img src="files/stop.png" class="col-sm-10 img-fluid bg-white mb-2 p-2 mx-auto d-flex" alt="">
-            
-            <div class="col-sm-10 mx-auto">
-              <div class="pungli-slider swiper">
-                <div class="swiper-wrapper">
-    
-                  <div class="swiper-slide">
-                    <div class="pungli-item">
-                      <img src="files/3_20221231_203351_0002.png" class="pungli-img" alt="">
-                      <div class="pungli-content shadow">
-                        <h3>Selamat Hari Natal 2022 dan Tahun Baru 2023</h3>
-                        <p>
-                          Tim UPP Kabupaten Blitar Mengucapkan Selamat Hari Natal Dan Tahun Baru 2023, Semoga Kesehatan, Keselamatan, kesuksesan dan keberkahan menyertai kita semua, sukses dan lancar dalam bekerja, Amin 3x.
-                        </p>
-                        <a href="https://saberpungli.blitarkab.go.id/selamat-hari-natal-2022-dan-tahun-baru-2023/" class="btn btn-primary btn-sm">Baca selangkapnya</a>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-    
-                  <div class="swiper-slide">
-                    <div class="pungli-item">
-                      <img src="files/WhatsApp-Image-2022-12-30-at-11.46.39.jpeg" class="pungli-img" alt="">
-                      <div class="pungli-content shadow">
-                        <h3>RAPAT KOORDINASI AKHIR TAHUN 2022</h3>
-                        <p>
-                          Tim UPP Kabupaten Blitar melaksanakan Rapat Koordinasi Akhir Tahun Anggaran 2022 dan Penyusunan Kegiatan Tahun 2023 di RM. Jogl0, Jatinom pada tanggal 29 Desember 2022. Sharing Session Antar Pokja Futu Bersama Tim UPP Kab. Blitar.
-                        </p>
-                        <a href="https://saberpungli.blitarkab.go.id/rapat-koordinasi-akhir-tahun-2022/" class="btn btn-primary btn-sm">Baca selangkapnya</a>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-    
-                  <div class="swiper-slide">
-                    <div class="pungli-item">
-                      <img src="files/aa.jpg" class="pungli-img" alt="">
-                      <div class="pungli-content shadow">
-                        <h3>Pilkades Serentak Di 23 Desa di 17 Kecamatan</h3>
-                        <p>
-                          Tim UPP Kabupaten Blitar yang terbagi dalam beberapa tim melakukan sidak pilkades di 23 Desa di 17 Kecamatan yang berada di Lingkungan Pemerintah Kabupaten Blitar.
-                        </p>
-                        <a href="https://saberpungli.blitarkab.go.id/pilkades-serentak-di-23-desa-di-17-kecamatan/" class="btn btn-primary btn-sm">Baca selangkapnya</a>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-    
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Berita Section -->
-
-    <!-- ======= Other Section ======= -->
-    <section id="clients" class="others">
-      <div class="container">
-
-        <div class="row text-center">
-          
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              RUPBASAN
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              DOKUMEN DAERAH
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              JDIH
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              LPSE
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              PPID
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              SAKIP
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              KOTAKU
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              ASPIRASI ANAK
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              DONOR PLASMA
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 mb-2">
-          <a class="shadow-sm border others-wrap" data-aos="zoom-in">
-            <div class="others-logo">
-              BMKG
-            </div>
-          </a>
-        </div>
-
-        </div>
-
-        </div>
-      </div>
-    </section><!-- End Other Section -->
 
     <!-- ======= Pungli Section ======= -->
-    <section id="pungli" class="pungli">
-      <div class="container">
+    <section id="clients" class="saber">
+      <div class="container-lg">
+      <div class="mb-4">
+        <img src="files/stop.png" class="col-sm-6 img-fluid bg-white mb-2 p-2 mx-auto d-flex" alt="">
+      </div>
+      <div class="px-2 px-lg-5">
 
-        <div class="col-lg-12 text-center">
-          <div class="d-flex flex-wrap justify-content-center gap-2">
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt1-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt2-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt3-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt4-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt5-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt6-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt7-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt8-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
-            </div>
-            <div class="col-md-2 p-1 bg-white">
-              <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt9-04.jpg?w=278&ssl=1" class="img-fluid" alt=""></a>
+        <div class="w-100">
+          <div class="col-lg-12 mx-auto">
+            <div class="pungli-slider swiper">
+              <div class="swiper-wrapper">
+  
+                <div class="swiper-slide">
+                  <div class="pungli-item">
+                    <img src="files/3_20221231_203351_0002.png" class="pungli-img" alt="">
+                    <div class="pungli-content shadow">
+                      <h3>Selamat Hari Natal 2022 dan Tahun Baru 2023</h3>
+                      <a href="https://saberpungli.blitarkab.go.id/selamat-hari-natal-2022-dan-tahun-baru-2023/" class="btn btn-primary btn-sm">Baca selangkapnya</a>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+  
+                <div class="swiper-slide">
+                  <div class="pungli-item">
+                    <img src="files/WhatsApp-Image-2022-12-30-at-11.46.39.jpeg" class="pungli-img" alt="">
+                    <div class="pungli-content shadow">
+                      <h3>RAPAT KOORDINASI AKHIR TAHUN 2022</h3>
+                      <a href="https://saberpungli.blitarkab.go.id/rapat-koordinasi-akhir-tahun-2022/" class="btn btn-primary btn-sm">Baca selangkapnya</a>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+  
+                <div class="swiper-slide">
+                  <div class="pungli-item">
+                    <img src="files/aa.jpg" class="pungli-img" alt="">
+                    <div class="pungli-content shadow">
+                      <h3>Pilkades Serentak Di 23 Desa di 17 Kecamatan</h3>
+                      <a href="https://saberpungli.blitarkab.go.id/pilkades-serentak-di-23-desa-di-17-kecamatan/" class="btn btn-primary btn-sm">Baca selangkapnya</a>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+  
+              </div>
+              <div class="pungli-pagination text-center py-4"></div>
             </div>
           </div>
         </div>
 
+        </div>
       </div>
     </section><!-- End Pungli Section -->
+
+    <!-- ======= Others Section ======= -->
+    <section id="others" class="others">
+      <div class="container-lg">
+        
+        <div class="col-md-12 px-2 px-lg-4 text-center position-relative">
+          <div class="others-slider swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt1-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt2-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt3-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt4-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt5-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt6-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt7-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt8-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="">
+                  <a href=""><img src="https://i1.wp.com/www.blitarkab.go.id/images/potensi/pt9-04.jpg?w=278&ssl=1" class="img-fluid p-1 bg-white" alt=""></a>
+                </div>
+              </div><!-- End testimonial item -->
+
+            </div>
+          </div>
+          
+        <div class="others-nav others-prev"><i class=" bi bi-arrow-caret-left-fill"></i></div>
+        <div class="others-nav others-next"><i class=" bi bi-arrow-caret-right-fill"></i></div>
+
+        </div>
+
+      </div>
+    </section><!-- End Others Section -->
 
   </main><!-- End #main -->
 
@@ -553,7 +528,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>Pemerintah Kabupaten Blitar</h3>
               <h6>Kantor Sekretariat Daerah Kabupaten Blitar</h6>
@@ -570,25 +545,28 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Menu</h4>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Link Terkait</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Layanan</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <div class="d-flex hstack align-items-start">
+                <div class="w-50">
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">RUPBASAN Blitar</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Dokumen Daerah</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">JDIH</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">LPSE</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">PPID</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">SAKIP</a></li>
+                </div>
+                <div class="w-50">
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">SIRUP</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">KOTAKU</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Aspirasi Anak</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Donor Plasma Konvslesen</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">BMKG</a></li>
+                </div>
+              </div>
+              
+              
             </ul>
           </div>
 
@@ -604,7 +582,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
+        Dikelola oleh <strong><span>Dinas Komunikasi, Informatika, Statistik dan Persandian Kabupaten Blitar</span></strong>.
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
