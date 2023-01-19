@@ -308,11 +308,11 @@
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 5
       },
       700: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 5
       },
     }
   });

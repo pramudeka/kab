@@ -1783,24 +1783,14 @@ section {
 }
 
 .pungli-item .pungli-img {
-  position: absolute;
-  z-index: -2;
-  border: 6px solid #fff;
   background: #fff;
   width: 100%;
-  top: 0;
-}
-
-.pungli-item .pungli-img:hover {
-  z-index: 2;
+  padding-top: 75%;
 }
 
 .pungli-item .pungli-content{
   background: #fff;
-  margin: 60% 15px 0 15px;
-  padding: 20px;
-  border-radius: 6px;
-  z-index: 1;
+  padding: 10px 0px;
 }
 .pungli-item h3 {
   font-size: 18px;
@@ -1820,23 +1810,14 @@ section {
   font-size: 14px;
 }
 
-.swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+.pungli-pagination .swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  margin: 0 8px !important;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #009cea;
+.berita-pagination .swiper-pagination-bullet-active{
 }
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #009cea;
-}
-
 /*==============================================*/
 
 .input-group > .btn{
@@ -1916,7 +1897,10 @@ th{
   font-family: 'Roboto-Slab', sans-serif;
 }
 
-@media (max-width: 992px){
+@media (max-width: 769px){
+  #hero .carousel-inner{
+    height: 56.25vh;
+  }
   #hero .hero-title{
     position: inherit;
     width: 100%;
@@ -1933,6 +1917,7 @@ th{
   #hero .hero-title p{
     margin-bottom: 0;
     color: #364146;
+    font-size: .9rem;
   }
 }
 
@@ -1972,9 +1957,15 @@ th{
 .layanan-slider{
   width: calc(100% - 120px);
 }
+.layanan-slider-item{
+  position: relative;
+}
 .layanan-slider-item:hover{
   background: #007ab7;
   transition: all .2s ease;
+}
+.layanan-slider-item:hover a{
+  color: #fff;
 }
 .layanan-slider-item:hover .layanan-slider-img{
   -webkit-filter: brightness(0) invert(1);
@@ -1986,18 +1977,23 @@ th{
 
 .layanan-slider-content{
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }
 .layanan-slider-content h5{
-  font-weight: 600;
+  font-weight: 800;
   padding: 10px;
   text-transform: uppercase;
   margin: 0;
+  font-size: .8rem;
 }
 .layanan-slider-content a{
   width: 100%;
   border-radius: 0;
+  color: #003651;
 }
 .layanan-nav {
 	position: absolute;
@@ -2062,6 +2058,7 @@ th{
 .berita-content{
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .berita-content > * {
@@ -2076,6 +2073,10 @@ th{
   width: 40%;
   background-color: #003651;
   color: #fff;
+}
+
+.berita-list{
+  background-color: #003651;
 }
 
 .list-pengumuman{
@@ -2093,6 +2094,7 @@ th{
   background-color: #deedf5;
   color: #003651;
   padding: 10px 20px;
+  font-size: .9rem;
 }
 .list-pengumuman li a:hover{
   background-color: #53bbf3;
@@ -2100,16 +2102,17 @@ th{
 
 .berita-news{
   flex: 0 0 auto;
-  width: 60%;
+  width: calc(60% - 20px);
 }
 .berita-news h2{
 	background: #003651;
 	padding: 15px 20px;
 	color: #fff;
+  margin: 0;
 }
 .berita-news-body{
   flex: 0 0 auto;
-  padding: 10px 20px;
+  padding-top: 15px;
 }
 .berita-preview {
 	display: flex;
@@ -2117,18 +2120,21 @@ th{
 	gap: 20px;
 }
 .berita-preview-img {
-	width: 50%;
+	width: 40%;
 }
 .berita-preview-content {
-	width: 50%;
+	width: 60%;
   text-align: justify;
+  font-size: .9rem;
+}
+.berita-list a, .berita-list a:visited{
+  color: #fff;
+}
+.berita-list a:hover{
+  color: #009cea;
 }
 .berita-preview-content h5{
   font-weight: 600;
-}
-.berita-slider-item{
-  padding: 10px;
-  background: #fff;
 }
 .berita-slider-img{
   width: 100%;
@@ -2137,7 +2143,6 @@ th{
 
 .berita-slider-content{
   width: 100%;
-  background-color: #fff;
   text-align: justify;
   line-height: initial;
   font-weight: 600;
@@ -2176,9 +2181,19 @@ th{
 .berita-nav.berita-prev:hover{
   border-right-color: #034692;
 }
-
+.berita-content .berita-pagination .swiper-pagination-bullet{
+  border-color: #009cea;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px !important;
+}
+.berita-content .berita-pagination .swiper-pagination-bullet-active{
+  border-color: #009cea;
+  background-color: #009cea;
+}
 .donor-show{
-  position: absolute;
+  /* position: absolute; */
 }
 .donor-content{
   background-color: #fff;
@@ -2197,7 +2212,10 @@ th{
   }
 
   .berita-news{
-    padding: 20px 10px;
+    padding: 20px 0;
+  }
+  .berita-news-body{
+    border: solid 5px #003651
   }
   .berita-preview-img ,
   .berita-preview-content {
@@ -2281,7 +2299,7 @@ th{
 }
 .halaman-footer{
   padding: 50px 0;
-  background-color: #d3d3d3;
+  /* background-color: #d3d3d3; */
 }
 .halaman-footer .container{
 }
@@ -2311,3 +2329,5 @@ th{
     width: 60%;
   }
 }
+
+/* ===================== */
