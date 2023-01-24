@@ -1899,24 +1899,24 @@ th{
 
 @media (max-width: 769px){
   #hero .carousel-inner{
-    height: 56.25vh;
+    height: calc(100vh - 90px);
   }
   #hero .hero-title{
-    position: inherit;
+    /* position: inherit; */
     width: 100%;
     padding: 30px 0px 10px 0px;
     text-align: center;
-    background: none;
+    /* background: none; */
     border-bottom: solid 2px #555;
   }
   #hero .hero-title h1 {
     font-size: 30px;
     line-height: 20px;
-    color: #364146;
+    /* color: #364146; */
   }
   #hero .hero-title p{
     margin-bottom: 0;
-    color: #364146;
+    /* color: #364146; */
     font-size: .9rem;
   }
 }
@@ -1988,9 +1988,9 @@ th{
   padding: 10px;
   text-transform: uppercase;
   margin: 0;
-  font-size: .8rem;
+  font-size: 100%;
 }
-.layanan-slider-content a{
+.layanan-slider a{
   width: 100%;
   border-radius: 0;
   color: #003651;
@@ -2127,7 +2127,7 @@ th{
   text-align: justify;
   font-size: .9rem;
 }
-.berita-list a, .berita-list a:visited{
+.berita-list a{
   color: #fff;
 }
 .berita-list a:hover{
@@ -2149,7 +2149,7 @@ th{
 }
 
 .berita-slider-content a{
-  color: #008bd1;
+  /* color: #008bd1; */
   font-size: .9rem;
 }
 
@@ -2193,7 +2193,13 @@ th{
   background-color: #009cea;
 }
 .donor-show{
-  /* position: absolute; */
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+.donor-show::before{
+  
+  content: 'Stok Darah PMI';
 }
 .donor-content{
   background-color: #fff;
@@ -2205,6 +2211,16 @@ th{
   right: 0;
   top: 0;
 }
+.donor-content h1,
+.donor-content h2,
+.donor-content h3,
+.donor-content h4,
+.donor-content h5,
+.donor-content h6{
+  color: #002131;
+  font-weight: 600;
+  border-bottom: solid 1px #dadada;
+}
 
 @media (max-width: 992px){
   .berita-announce, .berita-news{
@@ -2214,6 +2230,10 @@ th{
   .berita-news{
     padding: 20px 0;
   }
+  .berita-news h2{
+    text-align: center;
+  }
+  
   .berita-news-body{
     border: solid 5px #003651
   }
@@ -2236,7 +2256,11 @@ th{
     border-bottom-width: 12px;
   }
   .donor-show{
-    position: relative;
+    top: 20px;
+  }
+  .donor-show::before{
+    content: '\F30B';
+    font-family: 'bootstrap-icons' !important;
   }
 }
 
@@ -2287,6 +2311,7 @@ th{
 }
 .halaman-img {
   margin-bottom: 20px;
+  padding-top: 56.25% !important;
 }
 
 .halaman-isi{
